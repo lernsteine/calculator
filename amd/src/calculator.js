@@ -1,0 +1,31 @@
+/**
+ * Calculator block JavaScript.
+ *
+ * @module block_simplecalculator/calculator
+ * @copyright 2025 Your Name
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+export const init = () => {
+    let current = '';
+    const display = document.querySelector('.calculator-display');
+    const buttons = document.querySelectorAll('.calculator-buttons button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            let val = button.dataset.value;
+            if (val === 'C') {
+                current = '';
+            } else if (val === '=') {
+                try {
+                    current = String(Function('"use strict";return (' + current.replace(',', '.') + ')')());
+                } catch {
+                    current = 'Error';
+                }
+            } else {
+                current += val;
+            }
+            display.textContent = current || '0';
+        });
+    });
+};

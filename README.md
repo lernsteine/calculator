@@ -1,28 +1,42 @@
-Simple Calculator Block for Moodle
-=================================
+# Simple Calculator Block for Moodle
 
-A lightweight and fully functional calculator block for any Moodle course. Ideal for quick arithmetic operations right within your learning environment.
+This Moodle block plugin provides a simple calculator for use within course pages and dashboards.
 
-Key Features:
--------------
-- Basic operations: addition (+), subtraction (−), multiplication (×), division (÷)
-- Decimal input using comma (,)
-- 'c' button to clear the input
-- Responsive layout with large buttons
-- Inline JavaScript for full compatibility (no external libraries)
-- Moodle 4.x compatible
+## Features
 
-Installation:
--------------
-1. Upload the ZIP file via:
-   Site administration > Plugins > Install plugins
-2. Clear Moodle cache after installation.
-3. Add the block to any course page.
+- Fully client-side calculator
+- Responsive layout using native HTML/CSS
+- No data storage or tracking (GDPR-compliant)
+- Lightweight and easy to use
 
-Usage:
-------
-Students and teachers can perform quick calculations directly within any course. This is especially useful in math-focused subjects or while working on quizzes and assignments.
+## Installation
 
-Version: 1.0.3
-License: GNU GPL v3 or later
-Maintainer: Moodle community contributor
+1. Copy the folder `simplecalculator` into your Moodle `/blocks/` directory.
+2. Rename it to `simplecalculator` if necessary.
+3. Visit the *Site administration > Notifications* page to complete the installation.
+
+## Compatibility
+
+- Moodle 4.5 – 5.0
+
+## Development
+
+This plugin uses an AMD module for its JavaScript.
+
+To build the JS (after changes):
+
+```bash
+grunt amd
+```
+
+## Privacy
+
+This plugin does **not** store any personal user data.
+
+## License
+
+[GNU GPL v3](http://www.gnu.org/licenses/gpl-3.0.html)
+
+---
+
+© 2025 Your Name. Moodle plugin contribution.

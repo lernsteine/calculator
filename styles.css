@@ -1,0 +1,32 @@
+
+.block_simplecalculator .calculator-block {
+    font-family: Arial, sans-serif;
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.block_simplecalculator .calculator-display {
+    height: 40px;
+    background: #fff;
+    border: 1px solid #aaa;
+    padding: 5px;
+    font-size: 18px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.block_simplecalculator .calculator-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.block_simplecalculator .calculator-buttons div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.block_simplecalculator .calculator-buttons button {
+    flex: 1;
+    margin: 1px;
+    height: 40px;
+    font-size: 16px;
+}
