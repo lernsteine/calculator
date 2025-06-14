@@ -1,4 +1,6 @@
 <?php
+// Copyright (C) 2025 Your Name <you@example.com>
+
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -18,7 +20,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'block_simplecalculator';
-$plugin->version = 2025060709;
+$plugin->version   = 2025060900;
 $plugin->requires = 2022041900;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->release = '1.0.2';
